@@ -31,9 +31,9 @@ jobs:
           unzip ngrok-stable-linux-amd64.zip
           ls
       - name: setup vars
-          env:
+        env:
             authtoken: ${{ secrets.authtoken }}
-          run: |
+        run: |
             ./ngrok authtoken $authtoken
             
       # Runs a set of commands using the runners shell
