@@ -43,3 +43,7 @@ jobs:
           wget https://papermc.io/api/v2/projects/paper/versions/1.16.5/builds/433/downloads/paper-1.16.5-433.jar
           mv paper-1.16.5-433.jar server.jar
           
+      - name: run server
+        run: |
+          chmod +x server.sh
+          ./server.sh
