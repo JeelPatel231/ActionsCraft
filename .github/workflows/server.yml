@@ -27,6 +27,7 @@ jobs:
       
       - name: Install dependencies
         run: |
+          sudo apt install openjdk-8-jdk
           wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
           unzip ngrok-stable-linux-amd64.zip
           ls
